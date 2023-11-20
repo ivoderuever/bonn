@@ -1,0 +1,12 @@
+{
+  "name": "bonn",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ivoderuever/bonn\\",
+  "author": "Ivo de Ruever",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
