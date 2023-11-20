@@ -1,0 +1,30 @@
+/*Basic css*/
+* {
+  white-space: -moz-pre-wrap;
+  word-wrap: break-word;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  min-height: 99vh;
+  font-family: "mixta-pro", serif;
+  background-color: var(--body);
+  color: var(--font);
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
