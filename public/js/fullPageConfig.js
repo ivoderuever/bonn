@@ -3,7 +3,15 @@ new fullpage('#fullpage', {
   autoScrolling:true,
   scrollHorizontally: true,
   verticalCentered: false,
-  onLeave: function(origin, destination, direction, trigger){ console.log("Leaving section " + origin.index); console.log("Going to section " + destination.index)  },
+  onLeave: ( origin, destination ) => toggleDark(origin, destination),
 });
 
+//function to add .dark to body
+function toggleDark(origin, destination) {
+  if(destination.index === 0 || origin.index === 0) {
+    document.body.classList.toggle('dark');
+  }
+}
+
+// remove trash
 document.querySelector('.fp-watermark').remove();
