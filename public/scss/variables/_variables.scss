@@ -10,8 +10,8 @@ $tisa: 'ff-tisa-sans-web-pro', sans-serif;
   --white: #ffffff;
 
   //text
-  --font: #454545;
-  --reverse-font: #ececec;
+  --font: var(--black);
+  --reverse-font: var(--white);
 
   --primary: #00ff00;
 }
