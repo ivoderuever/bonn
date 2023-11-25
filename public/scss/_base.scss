@@ -38,6 +38,13 @@ img {
   transform: translate(-50%, -50%);
 }
 
+.mobile-width {
+  position: relative;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+
 //full page fixes
 .fp-section {
   height: 100%;

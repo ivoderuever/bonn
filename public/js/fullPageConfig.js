@@ -3,6 +3,9 @@ new fullpage('#fullpage', {
   autoScrolling:true,
   scrollHorizontally: true,
   verticalCentered: false,
+  lazyLoading: true,
+  menu: '#menu',
+  anchors:['landingPage', 'liveStreamPage'],
   onLeave: ( origin, destination ) => toggleDark(origin, destination),
 });
 

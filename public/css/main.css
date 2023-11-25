@@ -48,14 +48,29 @@ img {
   transform: translate(-50%, -50%);
 }
 
+.mobile-width {
+  position: relative;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
 .fp-section {
   height: 100%;
   height: 100dvh;
 }
 
+.landing {
+  padding: 40px 30px;
+}
+.landing .landing-title {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
 .bottom-counters {
   display: block;
-  position: fixed;
+  position: absolute;
   bottom: 10px;
   left: 10px;
   font-family: "ff-tisa-sans-web-pro", sans-serif;
