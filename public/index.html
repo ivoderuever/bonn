@@ -4,11 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bonn</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.css" />
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <h1 id="userCount">Hello world!</h1>
+  <div id="fullpage">
+    <div class="section">Some section</div>
+    <div class="section">Some section</div>
+    <div class="section">Some section</div>
+    <div class="section">Some section</div>
+  </div>
+  <div class="bottom-counters">
+    <p class="counter"><span id="userCount" class="num">0</span> writers</p>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.js"></script>
   <script src="/socket.io/socket.io.js"></script>
-  <script src="js/userCount.js"></script>
+  <script src="js/counter.js"></script>
+  <script src="js/fullPageConfig.js"></script>
 </body>
 </html>

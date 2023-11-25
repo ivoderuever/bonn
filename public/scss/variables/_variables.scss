@@ -1,10 +1,17 @@
+// font famelies
+$helvatica: 'Helvetica Neue', Helvetica, sans-serif;
+$tisa: 'ff-tisa-sans-web-pro', sans-serif;
+
 :root {
-  --body: #040D12;
-  --card: #183D3D;
+  --body: #ffffff;
+
+
+  --black: #000000;
+  --white: #ffffff;
 
   //text
-  --font: #ececec;
-  --reverse-font: #454545;
+  --font: #454545;
+  --reverse-font: #ececec;
 
-  --primary: #ff5353;
+  --primary: #00ff00;
 }

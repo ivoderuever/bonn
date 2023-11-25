@@ -1,0 +1,17 @@
+.bottom-counters {
+  display: block;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  font-family: $tisa;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  .counter {
+    font-size: 0.9rem;
+    .num {
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+  }
+}
