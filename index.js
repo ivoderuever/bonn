@@ -40,10 +40,11 @@ app.post('/api/print', (req, res) => {
 // on change printQueue
 let isPrinting = false;
 const printQueueIntervalFunc = () => {
+  console.log(printQueue);
   if (printQueue.length > 0 && !isPrinting) {
     isPrinting = true;
     const text = printQueue.shift();
-    const python = spawn('python', ['print.py', text]);
+    const python = spawn('python3', ['print.py', text]);
     python.on('close', (code) => {
       console.log(`child process close all stdio with code ${code}`);
       if(printQueue.length > 0) {
