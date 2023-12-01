@@ -62,8 +62,6 @@ const printQueueIntervalFunc = () => {
   }
 };
 
-
-
 // const script = spawn('python3', ['print.py', text]);
 // let dataToSend;
 
