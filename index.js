@@ -6,7 +6,7 @@ const { Server } = require('socket.io');
 
 // config
 const app = express();
-const port = 8080;
+const port = 80;
 const server = createServer(app);
 const io = new Server(server, {
   cors: {
