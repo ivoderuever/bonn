@@ -55,7 +55,9 @@ const printQueueIntervalFunc = () => {
     });
   } else {
     setTimeout(() => {
-      printQueueIntervalFunc();
+      if (printQueue.length > 0) {
+        printQueueIntervalFunc();
+      }
     }, 1000);
   }
 };
