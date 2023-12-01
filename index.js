@@ -28,7 +28,7 @@ app.use(express.json());
 
 app.post('/api/print', (req, res) => {
   const text = req.body.text;
-  const script = spawn('python', ['print.py', text]);
+  const script = spawn('python3', ['print.py', text]);
   let dataToSend;
   script.stdout.on('data', function (data) {
     console.log('Pipe data from python script ...');
