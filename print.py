@@ -10,7 +10,7 @@ Epson.set(align="left", font="a", width=2, height=2)
 Epson.text(sys.argv[1])
 
 Epson.set(align="center", width=1, height=2, font="a",)
-Epson.image("whale.png")
+Epson.image("whale.png", impl="bitImageColumn")
 # Epson.qr('https://deruever.nl/', ec=0, size=9, model=2, native=True)
 Epson.text("\n Write with us \n\n\n\n")
 
