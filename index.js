@@ -1,6 +1,7 @@
 const express = require('express')
 const { createServer } = require('node:http');
 const { join } = require('node:path');
+const { spawn } = require('child_process');
 const { Server } = require('socket.io');
 
 // config
@@ -21,6 +22,23 @@ app.get('/', (req, res) => {
 
 app.get('/form', (req, res) => {
   res.sendFile(join(__dirname, 'public/form.html'));
+});
+
+app.get('/api/print', (req, res) => {
+  const text = req.query.text;
+  const script = spawn('python', ['print.py', text]);
+  let dataToSend;
+  script.stdout.on('data', function (data) {
+    console.log('Pipe data from python script ...');
+    dataToSend = data.toString();
+  });
+
+  script.on('close', (code) => {
+    console.log(`child process close all stdio with code ${code}`);
+    // send data to browser
+    res.send(dataToSend)
+  });
+  // res.send('ok');
 });
 
 
