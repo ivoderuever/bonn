@@ -8,6 +8,7 @@ if (printBonForm) {
     axios.post('/api/print', {
       text: bon.value
     }).then((res) => {
+      alert('Printed');
       console.log(res.data);
     }).catch((err) => {
       console.log(err);

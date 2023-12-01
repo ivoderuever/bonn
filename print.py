@@ -14,7 +14,7 @@ Epson.image("qr.jpg", impl="bitImageColumn")
 # Epson.qr('https://deruever.nl/', ec=0, size=9, model=2, native=True)
 #Epson.text("\n Write with us \n\n\n\n")
 
-Epson.cut()
+#Epson.cut()
 
-print('Printing:' + sys.argv[1])
+print(sys.argv[1])
 sys.stdout.flush()
