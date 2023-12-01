@@ -140,7 +140,7 @@ img {
 }
 .print-form form textarea {
   width: calc(100% - 24px);
-  height: 600px;
+  height: 500px;
   border: 2px solid var(--black);
   resize: none;
   font-family: inherit;
