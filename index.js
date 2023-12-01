@@ -6,7 +6,7 @@ const { Server } = require('socket.io');
 
 // config
 const app = express();
-const port = 3000;
+const port = 80;
 const server = createServer(app);
 const io = new Server(server, {
   cors: {
@@ -24,8 +24,10 @@ app.get('/form', (req, res) => {
   res.sendFile(join(__dirname, 'public/form.html'));
 });
 
-app.get('/api/print', (req, res) => {
-  const text = req.query.text;
+app.use(express.json());
+
+app.post('/api/print', (req, res) => {
+  const text = req.body.text;
   const script = spawn('python', ['print.py', text]);
   let dataToSend;
   script.stdout.on('data', function (data) {

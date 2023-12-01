@@ -130,6 +130,60 @@ img {
   animation: opacity 0.4s ease;
 }
 
+.print-form {
+  padding: 20px 30px;
+}
+.print-form .form-title {
+  font-size: 2.7rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.print-form form textarea {
+  width: calc(100% - 24px);
+  height: 600px;
+  border: 2px solid var(--black);
+  resize: none;
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--black);
+  padding: 10px;
+}
+.print-form form textarea::-moz-placeholder {
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--black);
+}
+.print-form form textarea::placeholder {
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--black);
+}
+
+.form-btn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px;
+  margin: 20px 0;
+  border: 2px solid var(--black);
+  background-color: var(--white);
+}
+.form-btn .dot {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: var(--primary);
+}
+.form-btn .text {
+  font-family: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 0;
+}
+
 .bottom-counters {
   display: block;
   position: absolute;

@@ -1,0 +1,54 @@
+.print-form {
+  padding: 20px 30px;
+  
+  .form-title {
+    font-size: 2.7rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  form {
+    textarea {
+      width: calc(100% - 24px);
+      height: 600px;
+      border: 2px solid var(--black);
+      resize: none;
+      font-family: inherit;
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: var(--black);
+      padding: 10px;
+
+      &::placeholder {
+        font-family: inherit;
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: var(--black);
+      }
+    }
+  }
+}
+
+.form-btn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px;
+  margin: 20px 0;
+  border: 2px solid var(--black);
+  background-color: var(--white);
+
+  .dot {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: var(--primary);
+  }
+
+  .text {
+    font-family: inherit;
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 0;
+  }
+}
