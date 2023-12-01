@@ -12,12 +12,12 @@ def get_ip():
   s.close()
   return ip
 
-IP = get_ip()
-print(IP + ":8080")
+IP = get_ip() + ":8080"
 
 #Printer code for raspy
 Epson = printer.Usb(0x04b8,0x0e28)
 Epson.text(sys.argv[1])
+Epson.qr('http://' + IP)
 Epson.cut()
 
 print('Printing:' + sys.argv[1])
