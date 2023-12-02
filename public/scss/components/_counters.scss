@@ -3,17 +3,17 @@
   position: absolute;
   bottom: 20px;
   left: 30px;
-  font-family: $tisa;
+  font-family: $helvatica;
   font-weight: 500;
-  text-transform: uppercase;
+  text-transform: lowercase;
   padding: 0 5px;
   background-color: var(--white);
 
   .counter {
-    font-size: 0.9rem;
+    font-size: 1rem;
     .num {
-      font-size: 1.2rem;
-      font-weight: 400;
+      font-size: 1rem;
+      font-weight: 500;
     }
   }
 }
@@ -21,5 +21,11 @@
 .dark {
   .bottom-counters {
     background-color: black;
+  }
+}
+
+.about-page {
+  .bottom-counters {
+    position: fixed;
   }
 }

@@ -32,6 +32,11 @@ app.get('/extra-help', (req, res) => {
   res.sendFile(join(__dirname, 'public/extraHelp.html'));
 });
 
+// add 404 page
+app.get('*', (req, res) => {
+  res.sendFile(join(__dirname, 'public/404.html'));
+});
+
 app.use(express.json());
 
 const printQueue = []; // Array to store the print queue
