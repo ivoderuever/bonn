@@ -37,6 +37,11 @@
   margin: 20px 0;
   border: 2px solid var(--black);
   background-color: var(--white);
+  cursor: pointer;
+
+  &:hover {
+    background-color: #eeeeee;
+  }
 
   .dot {
     height: 20px;

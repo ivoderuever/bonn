@@ -177,6 +177,10 @@ img {
   margin: 20px 0;
   border: 2px solid var(--black);
   background-color: var(--white);
+  cursor: pointer;
+}
+.form-btn:hover {
+  background-color: #eeeeee;
 }
 .form-btn .dot {
   height: 20px;
@@ -191,6 +195,38 @@ img {
   padding: 0;
 }
 
+.fill-background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.live-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px;
+  margin: 20px 0;
+  border: 2px solid var(--black);
+  background-color: var(--white);
+}
+.live-btn .dot {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: var(--primary);
+}
+.live-btn .text {
+  font-family: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 0;
+}
+
 .bottom-counters {
   display: block;
   position: absolute;
@@ -199,6 +235,8 @@ img {
   font-family: "ff-tisa-sans-web-pro", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
+  padding: 0 5px;
+  background-color: var(--white);
 }
 .bottom-counters .counter {
   font-size: 0.9rem;
@@ -206,4 +244,8 @@ img {
 .bottom-counters .counter .num {
   font-size: 1.2rem;
   font-weight: 400;
+}
+
+.dark .bottom-counters {
+  background-color: black;
 }/*# sourceMappingURL=main.css.map */

@@ -24,6 +24,14 @@ app.get('/form', (req, res) => {
   res.sendFile(join(__dirname, 'public/form.html'));
 });
 
+app.get('/about', (req, res) => {
+  res.sendFile(join(__dirname, 'public/about.html'));
+});
+
+app.get('/extra-help', (req, res) => {
+  res.sendFile(join(__dirname, 'public/extraHelp.html'));
+});
+
 app.use(express.json());
 
 const printQueue = []; // Array to store the print queue
