@@ -8,3 +8,13 @@ if (ctaBtn) {
     }, 1000);
   });
 }
+
+// menu code
+const menu = document.querySelector('#menu');
+const menuBtn = document.querySelector('#menuButton');
+
+if (menuBtn) {
+  menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('menu-open');
+  });
+}
