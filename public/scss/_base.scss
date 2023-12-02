@@ -20,11 +20,20 @@ body {
   transition: background-color 0.2s ease;
 }
 
+#fp-nav ul li a span {
+  background-color: var(--black);
+}
+
 .dark {
   background-color: var(--black);
   color: var(--reverse-font);
   transition: color 0.2s ease;
   transition: background-color 0.2s ease;
+
+  #fp-nav ul li a span {
+    background-color: var(--white);
+  
+  }
 } 
 
 img {

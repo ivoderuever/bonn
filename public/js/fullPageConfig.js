@@ -7,7 +7,8 @@ if (homeRealContainer) {
     scrollHorizontally: true,
     verticalCentered: false,
     lazyLoading: true,
-    menu: '#menu',
+    navigation: true,
+    navigationPosition: 'right',
     anchors:['landingPage', 'liveStreamPage'],
     onLeave: ( origin, destination ) => toggleDark(origin, destination),
   });
@@ -22,6 +23,9 @@ if (formRealContainer) {
     scrollHorizontally: true,
     verticalCentered: false,
     lazyLoading: true,
+    navigation: true,
+    navigationPosition: 'right',
+    anchors:['writeInfoPage', 'writeFormPage'],
     // onLeave: ( origin, destination ) => toggleDark(origin, destination),
   });
 }
